@@ -66,7 +66,7 @@ sum_row = df_sub[['Jan','Feb','Mar','total']].sum()
 df_sub_sum = pd.DataFrame(data=sum_row).T
 df_sub_sum = df_sub_sum.applymap(lambda x: '${:,.0f}'.format(x))
 final_table = formatted_df.append(df_sub_sum)
-final_table = final_table.rename(index={0:'Total'})
+final_table = final_table.rename(index={13:'Total'})
 # Code ends here
 
 
